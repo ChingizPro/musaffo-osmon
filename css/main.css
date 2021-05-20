@@ -237,7 +237,7 @@ body {
 }
 
 .home__title {
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin-bottom: 5px;
   line-height: 1.1;
   margin-top: 0;
@@ -307,7 +307,7 @@ body {
 
 @media (max-width: 1260px) {
   .home__title {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
   }
 }
 
@@ -329,7 +329,7 @@ body {
 
 @media (max-width: 1180px) {
   .home__title {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .home__text {
     font-size: 1.3rem;
@@ -344,7 +344,7 @@ body {
 
 @media (max-width: 1090px) {
   .home__title {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   .home__text {
     font-size: 1.2rem;
@@ -378,7 +378,7 @@ body {
 
 @media (max-width: 950px) {
   .home__title {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -397,7 +397,7 @@ body {
     padding-right: 50px;
   }
   .home__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .home__text {
     font-size: 1.2rem;
@@ -413,7 +413,7 @@ body {
     padding-right: 30px;
   }
   .home__title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
   .home__box {
     padding: 70px 0 20px;
@@ -434,25 +434,25 @@ body {
 }
 
 .advantages__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
 }
 
 @media (max-width: 801px) {
   .advantages__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .advantages__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .advantages__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -750,7 +750,7 @@ body {
 }
 
 .clients__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   text-align: center;
   color: #161518;
@@ -759,19 +759,19 @@ body {
 
 @media (max-width: 801px) {
   .clients__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .clients__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .clients__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1069,7 +1069,7 @@ body {
 }
 
 .sponsors__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   color: #161518;
   text-align: center;
@@ -1078,19 +1078,19 @@ body {
 
 @media (max-width: 801px) {
   .sponsors__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .sponsors__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .sponsors__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1283,7 +1283,7 @@ body {
 }
 
 .info__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -1291,19 +1291,19 @@ body {
 
 @media (max-width: 801px) {
   .info__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .info__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .info__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1915,7 +1915,7 @@ body {
 }
 
 .gallery__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   text-align: center;
   color: #161518;
@@ -1923,19 +1923,19 @@ body {
 
 @media (max-width: 801px) {
   .gallery__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .gallery__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .gallery__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -2273,7 +2273,7 @@ body {
 }
 
 .contacts__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   color: #f7f7f7;
   margin-bottom: 35px;
@@ -2281,19 +2281,19 @@ body {
 
 @media (max-width: 801px) {
   .contacts__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .contacts__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .contacts__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -2405,7 +2405,7 @@ body {
 }
 
 .map__title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-top: 0;
   text-align: center;
   color: #161518;
@@ -2415,19 +2415,19 @@ body {
 
 @media (max-width: 801px) {
   .map__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 701px) {
   .map__title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 466px) {
   .map__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
