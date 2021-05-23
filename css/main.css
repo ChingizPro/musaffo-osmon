@@ -109,7 +109,7 @@ body {
   height: 60px;
   border-radius: 50%;
   background-color: #2c2b30;
-  color: lime;
+  color: #03f4f8;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -123,11 +123,13 @@ body {
   font-size: 1.5rem;
   z-index: 9999;
   padding: 5px 10px;
-  -webkit-box-shadow: 0 0 20px 2px lime;
-          box-shadow: 0 0 20px 2px lime;
-  opacity: 0.6;
+  -webkit-box-shadow: 0 0 20px 2px #03f4f8;
+          box-shadow: 0 0 20px 2px #03f4f8;
+  opacity: 0.65;
   -webkit-animation: tel 0.8s linear infinite;
           animation: tel 0.8s linear infinite;
+  -webkit-transition: 0.2s opacity linear;
+  transition: 0.2s opacity linear;
 }
 
 #tel:hover, #tel:active {
@@ -259,10 +261,11 @@ body {
   line-height: 1.4;
   border-radius: 64px;
   font-size: 1.07rem;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #2c2b30;
+  border: 2px solid #2c2b30;
+  font-weight: bold;
   text-transform: lowercase;
-  background-color: transparent;
+  background-color: #03f4f8;
   -webkit-transition: 0.2s padding-right linear, 0.2s color linear, 0.2s background-color linear;
   transition: 0.2s padding-right linear, 0.2s color linear, 0.2s background-color linear;
 }
@@ -295,6 +298,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.2rem;
+  color: #03f4f8;
+  font-weight: bold;
 }
 
 .home__link > i {
@@ -397,7 +403,7 @@ body {
     padding-right: 50px;
   }
   .home__title {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   .home__text {
     font-size: 1.2rem;
@@ -413,7 +419,7 @@ body {
     padding-right: 30px;
   }
   .home__title {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .home__box {
     padding: 70px 0 20px;
@@ -560,10 +566,11 @@ body {
   text-align: center;
   color: #fff;
   border-radius: 5px;
-  text-shadow: 1px 1px #777;
+  text-shadow: 0.5px 0.5px #03f4f8;
 }
 
 .advantage__marked {
+  color: #03f4f8;
   font-weight: bold;
   font-style: italic;
 }
@@ -809,15 +816,18 @@ body {
   line-height: 1.4;
   border-radius: 64px;
   font-size: 1.07rem;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #2c2b30;
+  border: 2px solid #2c2b30;
+  font-weight: bold;
   text-transform: lowercase;
-  background-color: transparent;
+  background-color: #03f4f8;
   -webkit-transition: 0.2s padding-right linear, 0.2s color linear, 0.2s background-color linear;
   transition: 0.2s padding-right linear, 0.2s color linear, 0.2s background-color linear;
   border-color: #2c2b30;
   color: #2c2b30;
   padding: 12px 5px 12px 25px;
+  background-color: #fff;
+  font-weight: normal;
 }
 
 .client__button > span {
@@ -1227,13 +1237,14 @@ body {
 
 .sitefooter__link > i {
   display: inline-block;
-  -webkit-transition: 0.1s -webkit-transform linear;
-  transition: 0.1s -webkit-transform linear;
-  transition: 0.1s transform linear;
-  transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+  -webkit-transition: 0.1s color linear, 0.1s -webkit-transform linear;
+  transition: 0.1s color linear, 0.1s -webkit-transform linear;
+  transition: 0.1s transform linear, 0.1s color linear;
+  transition: 0.1s transform linear, 0.1s color linear, 0.1s -webkit-transform linear;
 }
 
 .sitefooter__link > i:hover {
+  color: #03f4f8;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
@@ -1246,9 +1257,12 @@ body {
   color: #fff;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .sitefooter__authors > a:hover {
+  color: #03f4f8;
   text-decoration: none;
 }
 
@@ -1447,11 +1461,12 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 64px;
-  -webkit-transition: 0.2s background-color linear;
-  transition: 0.2s background-color linear;
+  -webkit-transition: 0.2s color linear, 0.2s background-color linear;
+  transition: 0.2s color linear, 0.2s background-color linear;
 }
 
 .menu__item a:hover {
+  color: #03f4f8;
   background-color: #222125;
 }
 
@@ -1639,7 +1654,7 @@ body {
           box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 1157px) {
+@media (max-width: 1187px) {
   .menu__small {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1714,12 +1729,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  .menu__small .menu__item--tel {
-    display: none;
-  }
-  .menu__temporary.menu__item--tel {
-    display: initial;
-  }
   .home__extra__list {
     margin-right: 15px;
   }
@@ -1729,6 +1738,29 @@ body {
   .home__menu {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .menu__fixed {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .home__extra__list .menu__item a {
+    padding: 8px 10px 7px;
+  }
+}
+
+@media (max-width: 377px) {
+  .menu__fixed {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .home__extra__list .menu__item a {
+    font-size: 0.9rem;
+  }
+  .home__logo img {
+    width: 3.5rem;
   }
 }
 
@@ -1945,7 +1977,7 @@ body {
 }
 
 .gallery__card {
-  border: 1px solid #7a7485;
+  border: 1px solid #03f4f8;
   border-radius: 5px;
   width: 20%;
   padding: 20px;
@@ -1995,9 +2027,9 @@ body {
 
 .gallery__nav .gallery__card.slick-current {
   cursor: default;
-  border: 1px solid #54515c;
-  -webkit-box-shadow: inset 0 0 15px 0 #2c2b30;
-          box-shadow: inset 0 0 15px 0 #2c2b30;
+  border: 1px solid #03f4f8;
+  -webkit-box-shadow: inset 0 0 50px 0 #03f4f8;
+          box-shadow: inset 0 0 50px 0 #03f4f8;
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
 }
@@ -2008,7 +2040,7 @@ body {
   -webkit-transform: translateY(-50%) scale(0.9);
           transform: translateY(-50%) scale(0.9);
   z-index: 1000;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   border: 2px solid #2c2b30;
   color: #2c2b30;
@@ -2040,7 +2072,7 @@ body {
   -webkit-transform: translateY(-50%) scale(0.9);
           transform: translateY(-50%) scale(0.9);
   z-index: 1000;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   border: 2px solid #2c2b30;
   color: #2c2b30;
@@ -2244,16 +2276,17 @@ body {
             align-items: center;
     border-radius: 5px;
     background-color: #fff;
-    border-color: #161518;
-    color: #161518;
+    border-color: #03f4f8;
+    color: #03f4f8;
+    font-weight: bold;
   }
   .slick-dots .slick-active button {
-    background-color: #161518;
+    background-color: #03f4f8;
     color: #fff;
   }
   .gallery__nav .gallery__card.slick-current {
     cursor: default;
-    border: 1px solid #2c2b30;
+    border: 1px solid #03f4f8;
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: scale(1);
@@ -2309,7 +2342,7 @@ body {
 }
 
 .contacts__input {
-  width: 25%;
+  width: 35%;
 }
 
 .contacts__input > input {
@@ -2341,14 +2374,15 @@ body {
 
 .contacts__button {
   position: relative;
+  width: 25%;
   padding: 14px 23px;
   font-size: 1rem;
   border-radius: 64px;
   cursor: pointer;
   border: none;
-  border: 2px solid #83808d;
-  background-color: #83808d;
-  color: #fff;
+  border: 2px solid #03f4f8;
+  background-color: #03f4f8;
+  color: #5d5b66;
   overflow: hidden;
   z-index: 7;
   outline: none;
@@ -2357,8 +2391,8 @@ body {
 }
 
 .contacts__button:hover {
-  color: #83808d;
-  background-color: #fff;
+  color: #03f4f8;
+  background-color: #5d5b66;
 }
 
 .contacts__button:focus {
@@ -2366,20 +2400,16 @@ body {
           box-shadow: 0 0 15px 1px #161518;
 }
 
-@media (max-width: 951px) {
+@media (max-width: 760px) {
   .contacts__input {
-    width: 48%;
-  }
-  .contacts__input:nth-child(1) {
-    margin-bottom: 35px;
+    width: 38%;
   }
   .contacts__button {
-    display: block;
-    width: 48%;
+    width: 20%;
   }
 }
 
-@media (max-width: 631px) {
+@media (max-width: 720px) {
   .contacts {
     padding: 60px 0 70px;
   }
@@ -2435,5 +2465,43 @@ body {
   .map iframe {
     height: 500px;
   }
+}
+
+.message {
+  background: linear-gradient(165deg, #2c2b30 0%, #2c2b30 52%, #2a292d 52%, #2a292d 100%);
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.message__content {
+  padding: 160px 0 90px;
+  text-align: center;
+}
+
+.message__title {
+  font-size: 2.6rem;
+  margin-top: 0;
+}
+
+@media (max-width: 801px) {
+  .message__title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 701px) {
+  .message__title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 466px) {
+  .message__title {
+    font-size: 2.1rem;
+  }
+}
+
+.message__text {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

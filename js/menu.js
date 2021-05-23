@@ -18,7 +18,7 @@
     }
 
     checkWindow = () => {
-        if ($(window).width() < 1157) {
+        if ($(window).width() < 1187) {
             toggler.addClass('toggler__on');
             menu.addClass('menu__closed');
             closeMenu();
