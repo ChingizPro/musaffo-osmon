@@ -32,11 +32,31 @@
             {
                 breakpoint: 541,
                 settings: {
-                    slidesToShow: 1,
-                    dots: true,
-                    centerMode: false
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 471,
+                settings: {
+                    slidesToShow: 3
                 }
             }
         ]
+    });
+    $('.show__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        prevArrow: '<button class="show__controller show__controller--prev"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="show__controller show__controller--next"><i class="fa fa-chevron-right"></i></button>'
+    });
+    $('.carousel-modal').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        prevArrow: '<button class="show__controller show__controller--prev"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="show__controller show__controller--next"><i class="fa fa-chevron-right"></i></button>'
     });
 })();
